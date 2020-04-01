@@ -26,9 +26,9 @@ En cas de non respect de la procédure, la connexion est fermée. Sinon elle est
 
 
 ### Remarque : 
-Pas mettre d'ip c'est bien
-bien specifier qu'on mets tcp 
-specifier entre client et serveur quel message on recoit (exit ou autre)
-Mettre dans protocole les operation ( * + - ) 
-Mettre la gestion des erreurs (quand on quitte on doit informer le client par exemple)
-Renseigner si stateless ou statefull
+* Pas mettre d'ip c'est bien
+* bien specifier qu'on mets tcp 
+* specifier entre client et serveur quel message on recoit (exit ou autre)
+* Mettre dans protocole les operation ( * + - ) 
+* Mettre la gestion des erreurs (quand on quitte on doit informer le client par exemple)
+* Renseigner si stateless ou statefull
