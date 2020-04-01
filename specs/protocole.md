@@ -32,3 +32,4 @@ En cas de non respect de la procédure, la connexion est fermée. Sinon elle est
 * Mettre dans protocole les operation ( * + - ) 
 * Mettre la gestion des erreurs (quand on quitte on doit informer le client par exemple)
 * Renseigner si stateless ou statefull
+* Lorsque l'on utilise des InputStreamReader on doit préciser l'encodage (utf-8)
