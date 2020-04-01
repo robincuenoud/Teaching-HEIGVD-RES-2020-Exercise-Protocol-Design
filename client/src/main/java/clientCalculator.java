@@ -14,6 +14,7 @@ public class clientCalculator{
         BufferedReader input = null;
         PrintWriter output = null;
         Socket clientS = null;
+        boolean run = true;
 
         try {
             clientS = new Socket("localhost", 2022);
@@ -23,9 +24,12 @@ public class clientCalculator{
 
             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-            while (true) {
+            while (run) {
 
                 String inputUser = reader.readLine();
+                if (inputUser.equals("exit")){
+                    run = false;
+                }
 
                 output.println(inputUser);
                 output.flush();
@@ -63,11 +67,14 @@ public class clientCalculator{
 
     }
 
+
+
     public static void main(String[] args){
 
         System.setProperty("java.util.logging.SimpleFormatter.format", "%5$s %n");
         clientCalculator client = new clientCalculator();
 
         client.sendRequest();
+      
     }
 }
