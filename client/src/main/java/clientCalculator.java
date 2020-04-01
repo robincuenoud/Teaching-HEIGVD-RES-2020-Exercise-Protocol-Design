@@ -6,7 +6,7 @@ import java.net.Socket;
 
 public class clientCalculator{
 
-    final static in BUFF_SIZE = 1024;
+    final static int BUFF_SIZE = 1024;
     static final Logger LOG = Logger.getLogger("clientCalculator");
 
     public void sendRequest(){
@@ -30,7 +30,7 @@ public class clientCalculator{
                 output.println(inputUser);
                 output.flush();
 
-                LOG.log(Level.INFO, String.format("The server response: %s", input.readline()));
+                LOG.log(Level.INFO, String.format("The server response: %s", input.readLine() ));
             }
 
         } catch(IOException e){
